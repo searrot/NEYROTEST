@@ -11,7 +11,7 @@ batch_size = 32
 image_size = (254, 254)
 
 
-driver = Firefox('geckodriver')
+driver = Firefox()
 driver.get('https://twitter.com/login')
 time.sleep(3)
 username = driver.find_element_by_xpath('//input[@name="session[username_or_email]"]')
